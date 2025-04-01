@@ -86,7 +86,7 @@ const Hero = () => {
       </Slider>
 
       {/* Overlay for Text & Form */}
-      <div className="bg-black bg-opacity-10 absolute inset-0 flex items-center lg:h-[86vh] ">
+      <div className="bg-black bg-opacity-10 absolute inset-0 flex items-center lg:h-[86vh]">
         {/* Drone-Themed Decorative Elements */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
           <DroneBackgroundSVG className="absolute top-10 left-10 opacity-20" />
@@ -97,150 +97,222 @@ const Hero = () => {
           {/* Left Side - Text and CTA (Position Unchanged) */}
           <div className="w-full lg:w-1/2 text-white">
             <h1 className="lg:text-6xl md:text-4xl text-2xl mb-4 font-sans font-thin bg-gradient-to-r from-black to-blue-600 bg-clip-text text-transparent animate-fade-in">
-            Drone Planet: <br/> Shaping the Future of Flight          </h1>
+              Drone Planet: <br /> Shaping the Future of Flight
+            </h1>
             <h2 className="text-sm md:text-xl mb-6 font-sans font-thin leading-relaxed text-gray-200 animate-fade-in">
-            Elevate your experience with premium drones, expert training, and endless career opportunities in the sky.
+              Elevate your experience with premium drones, expert training, and endless career opportunities in the sky.
             </h2>
-            <button className="bg-[#027bff] text-white lg:px-6 lg:py-3 px-4 py-2 rounded-md hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 font-sans font-thin transition-all duration-300">
+            <button className="bg-gradient-to-r from-[#103c65] to-[#328dcc] text-white lg:px-6 lg:py-3 px-4 py-2 rounded-md hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 font-sans font-thin transition-all duration-300">
               Explore Our Services
             </button>
           </div>
 
-          {/* Right Side - Smaller Contact Form */}
+          {/* Right Side - Attractive Transparent Contact Form */}
           <div className="w-full lg:w-2/5 mt-8 lg:mt-0">
-            <form
-              onSubmit={handleSubmit}
-              className="bg-white bg-opacity-95 p-4 rounded-xl shadow-lg space-y-3 max-w-md mx-auto lg:mx-0"
-            >
-              <h3 className="text-lg font-bold text-center uppercase text-gray-800 animate-fade-in">
-                Contact Us
-              </h3>
 
-              {/* Name */}
-              <div className="relative">
-                <label className="block text-gray-700 text-xs font-medium mb-1">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full p-2 pl-8 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#328dcc] focus:border-[#328dcc] transition-all duration-200"
-                  required
-                />
-                <UserIcon className="absolute left-2 top-7 h-4 w-4 text-gray-400" />
-              </div>
 
-              {/* Phone */}
-              <div className="relative">
-                <label className="block text-gray-700 text-xs font-medium mb-1">Phone Number</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full p-2 pl-8 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#328dcc] focus:border-[#328dcc] transition-all duration-200"
-                  required
-                />
-                <PhoneIcon className="absolute left-2 top-7 h-4 w-4 text-gray-400" />
-              </div>
 
-              {/* City */}
-              <div className="relative">
-                <label className="block text-gray-700 text-xs font-medium mb-1">City</label>
-                <input
-                  type="text"
-                  name="city"
-                  value={formData.city}
-                  onChange={handleChange}
-                  className="w-full p-2 pl-8 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#328dcc] focus:border-[#328dcc] transition-all duration-200"
-                  required
-                />
-                <MapPinIcon className="absolute left-2 top-7 h-4 w-4 text-gray-400" />
-              </div>
+          
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white  backdrop-blur-md px-6 py-3 rounded-xl shadow-lg space-y-3 max-w-md mx-auto lg:mx-0 border border-gray-700"
+      >
+        <div className="bg-white p-4 rounded-lg space-y-3">
+          <h3 className="text-lg font-bold text-center uppercase text-[#027bff] animate-fade-in">
+            Contact Us
+          </h3>
 
-              {/* State */}
-              <div className="relative">
-                <label className="block text-gray-700 text-xs font-medium mb-1">State</label>
-                <input
-                  type="text"
-                  name="state"
-                  value={formData.state}
-                  onChange={handleChange}
-                  className="w-full p-2 pl-8 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#328dcc] focus:border-[#328dcc] transition-all duration-200"
-                  required
-                />
-                <GlobeAltIcon className="absolute left-2 top-7 h-4 w-4 text-gray-400" />
-              </div>
-
-              {/* Email */}
-              <div className="relative">
-                <label className="block text-gray-700 text-xs font-medium mb-1">Email Address</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full p-2 pl-8 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#328dcc] focus:border-[#328dcc] transition-all duration-200"
-                  required
-                />
-                <div className="absolute left-2 top-7 h-4 w-4 text-gray-400" />
-              </div>
-
-              {/* Interest */}
-              <div className="relative">
-                <label className="block text-gray-700 text-xs font-medium mb-1">
-                  Field of Interest
-                </label>
-                <select
-                  name="interest"
-                  value={formData.interest}
-                  onChange={handleChange}
-                  className="w-full p-2 pl-8 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#328dcc] focus:border-[#328dcc] transition-all duration-200 appearance-none"
-                  required
-                >
-                  <option value="">Select an option</option>
-                  <option value="Drone Vendorship">Drone Vendorship</option>
-                  <option value="Drones">Drones</option>
-                  <option value="Drone Parts">Drone Parts</option>
-                  <option value="Drone Jobs">Drone Jobs</option>
-                  <option value="Drone Courses">Drone Courses</option>
-                  <option value="RPTO's">RPTO's</option>
-                  <option value="Drone As a Service">Drone As a Service</option>
-                </select>
-                <ChevronDownIcon className="absolute right-2 top-7 h-4 w-4 text-gray-400 pointer-events-none" />
-                <svg className="absolute left-2 top-7 h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                </svg>
-              </div>
-
-              {/* Submit Button */}
-              <div className="flex justify-center items-center">
-                <button
-                  type="submit"
-                  disabled={isLoading}
-                  className="bg-[#027bff] text-white px-4 py-2 w-full rounded-lg text-sm hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isLoading ? (
-                    <svg className="animate-spin h-4 w-4 mx-auto text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                  ) : (
-                    'Submit'
-                  )}
-                </button>
-              </div>
-
-              {/* Success/Error Message */}
-              {message && (
-                <div className={`mt-2 p-2 rounded-lg text-center text-xs transition-all duration-300 ${message.includes('Failed') ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}`}>
-                  {message}
-                </div>
-              )}
-            </form>
+          {/* Name */}
+          <div className="relative">
+            <label className="block text-gray-300 text-xs font-medium mb-1">Name</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full p-2 pl-8 bg-white bg-opacity-50 border border-gray-600 rounded-lg text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:scale-105 transition-all duration-300"
+              placeholder="Enter your name"
+              required
+            />
+            <UserIcon className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300" />
           </div>
+
+          {/* Phone */}
+          <div className="relative">
+            <label className="block text-gray-300 text-xs font-medium mb-1">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full p-2 pl-8 bg-white bg-opacity-50 border border-gray-600 rounded-lg text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:scale-105 transition-all duration-300"
+              placeholder="Enter your phone number"
+              required
+            />
+            <PhoneIcon className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300" />
+          </div>
+
+          {/* City */}
+          <div className="relative">
+            <label className="block text-gray-300 text-xs font-medium mb-1">City</label>
+            <input
+              type="text"
+              name="city"
+              value={formData.city}
+              onChange={handleChange}
+              className="w-full p-2 pl-8 bg-white bg-opacity-50 border border-gray-600 rounded-lg text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:scale-105 transition-all duration-300"
+              placeholder="Enter your city"
+              required
+            />
+            <MapPinIcon className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300" />
+          </div>
+
+          {/* State */}
+          <div className="relative">
+            <label className="block text-gray-300 text-xs font-medium mb-1">State</label>
+            <input
+              type="text"
+              name="state"
+              value={formData.state}
+              onChange={handleChange}
+              className="w-full p-2 pl-8 bg-white bg-opacity-50 border border-gray-600 rounded-lg text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:scale-105 transition-all duration-300"
+              placeholder="Enter your state"
+              required
+            />
+            <GlobeAltIcon className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300" />
+          </div>
+
+          {/* Email */}
+          <div className="relative">
+            <label className="block text-gray-300 text-xs font-medium mb-1">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full p-2 pl-8 bg-white bg-opacity-50 border border-gray-600 rounded-lg text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:scale-105 transition-all duration-300"
+              placeholder="Enter your email"
+              required
+            />
+            <svg
+              className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M16 12H8m4-4v8m-8 4h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+
+          {/* Interest */}
+          <div>
+      <label className="block text-gray-700 text-xs font-medium mb-2">Fields of Interest</label>
+      <div className="grid grid-cols-4 gap-2">
+        {[
+          "Drone Vendorship",
+          "Drones",
+          "Drone Parts",
+          "Drone Jobs",
+          "Drone Courses",
+          "RPTO's",
+          "Drone As a Service",
+        ].map((option) => (
+          <div key={option} className="flex items-center">
+            <input
+              type="checkbox"
+              name="interest"
+              value={option}
+              checked={formData.interest.includes(option)}
+              onChange={(e) => {
+                const updatedInterests = e.target.checked
+                  ? [...formData.interest, option]
+                  : formData.interest.filter((item) => item !== option);
+                handleChange({ target: { name: "interest", value: updatedInterests } });
+              }}
+              className="h-3 w-3 text-[#027bff] border-[#027bff] rounded focus:ring-[#027bff] focus:ring-2 transition-all duration-300"
+            />
+            <label className="ml-2 text-[0.6rem] text-gray-800">{option}</label>
+          </div>
+        ))}
+      </div>
+    </div>
+
+          {/* Submit Button */}
+          <div className="flex justify-center items-center">
+            <button
+              type="submit"
+              disabled={isLoading}
+              className="relative bg-gradient-to-r from-[#027bff] to-blue-600 text-white px-4 py-2 w-full rounded-lg text-sm hover:from-blue-600 hover:to-blue-700 hover:scale-105 transition-all "
+            >
+              {isLoading ? (
+                <svg
+                  className="animate-spin h-4 w-4 mx-auto text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  />
+                </svg>
+              ) : (
+                'Submit'
+              )}
+            </button>
+          </div>
+
+          {/* Success/Error Message */}
+          {message && (
+            <div
+              className={`mt-2 p-2 rounded-lg text-center text-xs transition-all duration-300 ${
+                message.includes('Failed') ? 'bg-red-900 text-red-300' : 'bg-green-900 text-green-300'
+              }`}
+            >
+              {message}
+            </div>
+          )}
+        </div>
+      </form>
+
+
+
+    </div>
         </div>
       </div>
+
+      {/* Custom Styles for Pulsating Glow Effect */}
+      <style jsx global>{`
+        @keyframes pulseGlow {
+          0% {
+            box-shadow: 0 0 5px rgba(50, 141, 204, 0.5);
+          }
+          50% {
+            box-shadow: 0 0 15px rgba(50, 141, 204, 0.8);
+          }
+          100% {
+            box-shadow: 0 0 5px rgba(50, 141, 204, 0.5);
+          }
+        }
+        .animate-pulse-glow {
+          animation: pulseGlow 2s infinite ease-in-out;
+        }
+      `}</style>
     </div>
   );
 };

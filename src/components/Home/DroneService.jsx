@@ -48,7 +48,7 @@ const services = [
 
 const DroneService = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-[#328dcc] to-[#103c65] relative overflow-hidden">
+    <section className="py-16 bg-white relative overflow-hidden">
       {/* Background Overlay */}
 
 
@@ -60,13 +60,10 @@ const DroneService = () => {
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Heading with Gradient Text */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-[#addaff] to-white bg-clip-text text-transparent animate-fade-in">
-          Drone as a Service (DaaS)
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 b animate-fade-in">
+          Drone as a  <span className='text-[#027bff]'> Service (DaaS)</span> 
         </h2>
-        <p className="text-lg text-gray-200 mb-12 max-w-2xl mx-auto">
-          Access professional drone services tailored for your business needs.
-        </p>
-
+      
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
           {services.map((service, index) => (

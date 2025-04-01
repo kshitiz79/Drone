@@ -22,7 +22,7 @@ const DroneBackgroundSVG = ({ className }) => (
 
 const VendorOnboarding = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-[#103c65] to-[#328dcc] relative overflow-hidden">
+    <section className="py-16 bg-white relative overflow-hidden">
       {/* Background Overlay */}
 \
 
@@ -34,10 +34,10 @@ const VendorOnboarding = () => {
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Heading with Gradient Text */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-[#328dcc] to-white bg-clip-text text-transparent animate-fade-in">
-          Become a Vendor
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-6  to-white text-black animate-fade-in">
+          Become a <span className='text-[#027bff]'>Vendor</span> 
         </h2>
-        <p className="text-lg text-gray-200 mb-12 max-w-2xl mx-auto animate-fade-in">
+        <p className="text-lg text-gray-900 mb-12 max-w-2xl mx-auto animate-fade-in">
           Expand your business with Drone Planet by reaching targeted customers, enjoying hassle-free selling, and receiving dedicated support.
         </p>
 
@@ -66,7 +66,7 @@ const VendorOnboarding = () => {
         {/* Call to Action Button */}
         <Link
           to="/vendor-onboard"
-          className="inline-block px-8 py-3 bg-gradient-to-r from-[#103c65] to-[#328dcc] text-white border-white border-2 font-semibold rounded-lg shadow-md hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 transition-all duration-300"
+          className="inline-block px-8 py-3 bg-[#027bff] text-white border-white border-2 font-semibold rounded-lg shadow-md hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 transition-all duration-300"
         >
           Become a Vendor
         </Link>

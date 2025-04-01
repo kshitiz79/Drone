@@ -30,7 +30,7 @@ export const BlogResources = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-[#103c65]  to-[#328dcc] relative overflow-hidden">
+    <section className="py-16  relative overflow-hidden">
       {/* Background Overlay */}
  
 
@@ -46,8 +46,8 @@ export const BlogResources = () => {
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Heading with Gradient Text */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-[#328dcc] to-white bg-clip-text text-transparent animate-fade-in">
-          Blog & Resources
+        <h2 className="text-4xl md:text-5xl font-bold mb-8  animate-fade-in">
+          Blog & <span className="text-[#027bff]" >Resources</span> 
         </h2>
 
         {/* Blog Posts Grid */}

@@ -36,7 +36,7 @@ export const WhyChooseDronePlanet = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-[#328dcc]  to-[#103c65]  relative overflow-hidden">
+    <section className="py-16 bg-white relative overflow-hidden">
       {/* Background Overlay */}
     
 
@@ -56,9 +56,9 @@ export const WhyChooseDronePlanet = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-4xl md:text-5xl font-extrabold mb-12 bg-gradient-to-r from-[#5697c3] to-white bg-clip-text text-transparent animate-fade-in"
+          className="text-4xl md:text-5xl font-bold mb-12  animate-fade-in"
         >
-          Why Choose Drone Planet?
+          Why Choose <span className='text-[#027bff]'> Drone Planet?</span>
         </motion.h2>
 
         {/* Differentiators Grid */}

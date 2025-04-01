@@ -64,7 +64,7 @@ const courses = [
 
 const DroneTraining = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-[#103c65] to-[#328dcc] relative overflow-hidden">
+    <section className="py-16 bg-white relative overflow-hidden">
       {/* Background Overlay */}
 
 
@@ -76,13 +76,10 @@ const DroneTraining = () => {
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Heading with Gradient Text */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-[#328dcc] to-white bg-clip-text text-transparent animate-fade-in">
-          Drone Training & Certification
+        <h2 className="text-4xl md:text-5xl font-bold  mb-4  animate-fade-in">
+          Drone Training & <span className='text-[#027bff]'> Certification</span> 
         </h2>
-        <p className="text-lg text-gray-200 mb-12 max-w-2xl mx-auto animate-fade-in">
-          Benefit from practical training, expert guidance, and career assistance.
-        </p>
-
+       
         {/* Courses Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
           {courses.map((course, index) => (
