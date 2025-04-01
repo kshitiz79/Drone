@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header className="bg-gradient-to-r from-[#d3d4d5] to-[#e6f5ff] shadow sticky top-0 z-50 py-4 relative animate-fade-in">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-black opacity-10"></div>
+
 
       {/* Drone-Themed Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
