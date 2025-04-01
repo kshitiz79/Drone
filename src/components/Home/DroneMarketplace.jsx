@@ -1,111 +1,82 @@
 import React from 'react';
-import Slider from 'react-slick';
-import { Link } from 'react-router-dom';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
-// Custom Drone SVG for Background Decoration
-const DroneBackgroundSVG = ({ className }) => (
-  <svg
-    className={className}
-    width="100"
-    height="100"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="white"
-    strokeWidth="1.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M12 4v2m0 12v2m8-8h-2m-12 0H4m15.071-4.071l-1.414 1.414M6.343 15.657l-1.414 1.414m0-8.728l1.414 1.414m12.728 8.728l-1.414-1.414" />
-    <circle cx="12" cy="12" r="2" />
-    <path d="M12 10a2 2 0 0 0-2 2m2-2a2 2 0 0 1 2 2m-2-2v4m2-2H10" />
-  </svg>
-);
-
-const DroneMarketplace = () => {
-  const featuredProducts = [
-    { id: 1, image: "/1.png", title: "Drone Model A" },
-    { id: 2, image: "/2.png", title: "Drone Model B" },
-    { id: 3, image: "/3.png", title: "Drone Model C" },
-    // Add more products as needed
+const DroneCategories = () => {
+  const categories = [
+    {
+      id: 1,
+      title: 'Agriculture Drones',
+      description:
+        'Agriculture drones improve crop monitoring, irrigation, and spraying, helping farmers increase efficiency and yield.',
+      image: '/11.png',
+      buttonLabel: 'Buy Now',
+    },
+    {
+      id: 2,
+      title: 'Photography Drones',
+      description:
+        'Photography drones capture high-quality aerial images and videos, making them ideal for professionals and hobbyists alike.',
+        image: '/12.png',
+      buttonLabel: 'Buy Now',
+    },
+    {
+      id: 3,
+      title: 'Survey and Inspection Drones',
+      description:
+        'Survey drones map large areas with precision, while inspections help infrastructure, reducing risk and maintenance costs.',
+        image: '/13.png',
+      buttonLabel: 'Buy Now',
+    },
+    {
+      id: 4,
+      title: 'Nano Drones',
+      description:
+        'Nano drones are small, lightweight, and easy to use, making them perfect for indoor flying, training, and recreational use.',
+        image: '/14.png',
+      buttonLabel: 'Buy Now',
+    },
   ];
 
-  const settings = {
-  
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 640,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   return (
-    <section className="py-16 bg-gradient-to-b from-[#328dcc] to-[#103c65] relative overflow-hidden">
-      {/* Background Overlay */}
-
-
-      {/* Drone-Themed Decorative Elements */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-        <DroneBackgroundSVG className="absolute top-10 left-10 opacity-20" />
-        <DroneBackgroundSVG className="absolute bottom-10 right-10 opacity-20" />
-      </div>
-
-      <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Heading with Gradient Text */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-[#328dcc] to-white bg-clip-text text-transparent animate-fade-in">
-          Drone Marketplace
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Section Title */}
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-8">
+          Drone  <span className='text-[#027bff]'>Categories</span>
         </h2>
-        <p className="text-lg text-gray-200 mb-12 max-w-2xl mx-auto animate-fade-in">
-          Discover a wide selection of drones and accessories from verified vendors at competitive prices.
-        </p>
 
-        {/* Slider for Featured Products */}
-        <Slider {...settings} className="px-4">
-          {featuredProducts.map((product) => (
-            <div key={product.id} className="px-4">
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <div className="relative">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black opacity-20"></div>
-                </div>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold text-gray-900">{product.title}</h3>
-                </div>
-              </div>
+        {/* Categories Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {categories.map((category) => (
+            <div
+              key={category.id}
+              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 flex flex-col items-center text-center"
+            >
+              {/* Category Image */}
+              <img
+                src={category.image}
+                alt={category.title}
+                className="w-32 h-32 object-contain mb-4"
+              />
+
+              {/* Category Title */}
+              <h3 className="text-xl font-semibold mb-2">
+                {category.title}
+              </h3>
+
+              {/* Category Description */}
+              <p className="text-gray-600 mb-4">
+                {category.description}
+              </p>
+
+              {/* Button */}
+              <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                {category.buttonLabel}
+              </button>
             </div>
           ))}
-        </Slider>
-
-        {/* Call to Action Button */}
-       
+        </div>
       </div>
-
-      {/* Custom Slider Styles */}
-      <style jsx global>{`
-     
-      
-        
-      
-      `}</style>
     </section>
   );
 };
-
-export default DroneMarketplace;
+export default DroneCategories;

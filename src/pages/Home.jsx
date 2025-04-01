@@ -24,7 +24,7 @@ const Home = () => {
     <DroneJobs/>
     <DroneTraining/>
     <DroneService/>
-    <Testimonials/>
+
     <WhyChooseDronePlanet/>
     <BlogResources/>
     <NewsletterSubscription/>

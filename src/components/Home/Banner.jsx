@@ -93,15 +93,15 @@ const Hero = () => {
           <DroneBackgroundSVG className="absolute bottom-10 right-10 opacity-20" />
         </div>
 
-        <div className="max-w-[1400px] mx-auto px-6 md:px-14 w-full flex flex-col lg:flex-row justify-between relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-14 w-full flex flex-col lg:flex-row justify-between relative z-10">
           {/* Left Side - Text and CTA (Position Unchanged) */}
           <div className="w-full lg:w-1/2 text-white">
             <h1 className="lg:text-6xl md:text-4xl text-2xl mb-4 font-sans font-thin bg-gradient-to-r from-black to-blue-600 bg-clip-text text-transparent animate-fade-in">
-              romne Spaces, <br /> Inspiring rone            </h1>
+            Drone Planet: <br/> Shaping the Future of Flight          </h1>
             <h2 className="text-sm md:text-xl mb-6 font-sans font-thin leading-relaxed text-gray-200 animate-fade-in">
-           bmfnfw ewklew lewklmkew ndelekdlwlew ewklmewm
+            Elevate your experience with premium drones, expert training, and endless career opportunities in the sky.
             </h2>
-            <button className="bg-gradient-to-r from-[#103c65] to-[#328dcc] text-white lg:px-6 lg:py-3 px-4 py-2 rounded-md hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 font-sans font-thin transition-all duration-300">
+            <button className="bg-[#027bff] text-white lg:px-6 lg:py-3 px-4 py-2 rounded-md hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 font-sans font-thin transition-all duration-300">
               Explore Our Services
             </button>
           </div>
@@ -218,7 +218,7 @@ const Hero = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="bg-gradient-to-r from-[#103c65] to-[#328dcc] text-white px-4 py-2 w-full rounded-lg text-sm hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-[#027bff] text-white px-4 py-2 w-full rounded-lg text-sm hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isLoading ? (
                     <svg className="animate-spin h-4 w-4 mx-auto text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+          <div className='flex flex-col items-center'> 
+            <h4 className="text-lg font-semibold mb-4 ">Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/buy-drones" className="hover:text-white transition">

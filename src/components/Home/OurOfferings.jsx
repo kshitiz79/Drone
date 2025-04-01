@@ -68,7 +68,7 @@ const offerings = [
 
 const OurOfferings = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-[#103c65] to-[#328dcc] relative overflow-hidden">
+    <section className="py-16 bg-white relative overflow-hidden">
       {/* Background Overlay */}
 
 
@@ -80,10 +80,10 @@ const OurOfferings = () => {
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Heading with Gradient Text */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-[#328dcc] to-white bg-clip-text text-transparent animate-fade-in">
-          Our Offerings
+        <h2 className="text-3xl  md:text-5xl font-bold mb-4  animate-fade-in">
+          Our <span className='text-[#027bff]'>  Offerings</span>
         </h2>
-        <p className="text-lg text-gray-200 mb-12 max-w-2xl mx-auto animate-fade-in">
+        <p className="text-lg text-gray-900 mb-12 max-w-2xl mx-auto animate-fade-in">
           Discover our comprehensive solutions in the drone industry.
         </p>
 
@@ -93,12 +93,12 @@ const OurOfferings = () => {
             <Link
               to={offering.link}
               key={index}
-              className="bg-gradient-to-br  from-[#103c65] to-[#328dcc] border-white border-2 p-6 rounded-xl shadow-lg text-white transition-transform transform hover:scale-105 hover:shadow-xl"
+              className="text-black border-[#027bff] border-2 p-6 rounded-xl shadow-lg text-white transition-transform transform hover:scale-105 hover:shadow-xl"
             >
               <div className="flex flex-col items-center space-y-4">
                 <div className="bg-white p-3 rounded-full">{offering.icon}</div>
                 <h3 className="text-xl font-semibold">{offering.title}</h3>
-                <p className="text-sm text-gray-200 opacity-90">{offering.description}</p>
+                <p className="text-sm text-gray-900 opacity-90">{offering.description}</p>
               </div>
             </Link>
           ))}
