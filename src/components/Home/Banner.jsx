@@ -72,7 +72,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative bg-gradient-to-br from-[#103c65] to-[#328dcc] h-[100vh] md:h-auto">
+    <div className="relative bg-gradient-to-br from-[#103c65] to-[#328dcc] h-[100vh]  md:h-auto">
       <Slider {...settings} className="h-full">
         {sliderImages.map((image, index) => (
           <div key={index} className="h-full">
@@ -86,14 +86,14 @@ const Hero = () => {
       </Slider>
 
       {/* Overlay for Text & Form */}
-      <div className="bg-black bg-opacity-10 absolute inset-0 flex items-center lg:h-[86vh]">
+      <div className="bg-black bg-opacity-10 absolute inset-0 flex items-center md:h-[10vh] lg:h-[86vh]">
         {/* Drone-Themed Decorative Elements */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
           <DroneBackgroundSVG className="absolute top-10 left-10 opacity-20" />
           <DroneBackgroundSVG className="absolute bottom-10 right-10 opacity-20" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 md:px-14 w-full flex flex-col lg:flex-row justify-between relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-14 w-full flex flex-col lg:flex-row justify-between relative z-10 md:mt-20 lg:mt-0">
           {/* Left Side - Text and CTA (Position Unchanged) */}
           <div className="w-full lg:w-1/2 text-white">
             <h1 className="lg:text-6xl md:text-4xl text-2xl mb-4 font-sans font-thin bg-gradient-to-r from-black to-blue-600 bg-clip-text text-transparent animate-fade-in">
@@ -108,14 +108,14 @@ const Hero = () => {
           </div>
 
           {/* Right Side - Attractive Transparent Contact Form */}
-          <div className="w-full lg:w-2/5 mt-8 lg:mt-0">
+          <div className="w-full lg:w-2/5 mt-8 md:mt-10 lg:mt-0">
 
 
 
           
       <form
         onSubmit={handleSubmit}
-        className="bg-white  backdrop-blur-md px-6 py-3 rounded-xl shadow-lg space-y-3 max-w-md mx-auto lg:mx-0 border border-gray-700"
+        className="bg-white  backdrop-blur-md px-6 py-3 rounded-xl shadow-lg   lg:space-y-3 max-w-md mx-auto lg:mx-0 border border-gray-700"
       >
         <div className="bg-white p-4 rounded-lg space-y-3">
           <h3 className="text-lg font-bold text-center uppercase text-[#027bff] animate-fade-in">
@@ -293,6 +293,8 @@ const Hero = () => {
 
 
     </div>
+
+
         </div>
       </div>
 
