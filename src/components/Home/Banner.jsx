@@ -72,21 +72,21 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-auto bg-gradient-to-br from-[#103c65] to-[#328dcc]">
+    <div className="relative bg-gradient-to-br from-[#103c65] to-[#328dcc] h-[100vh] md:h-auto">
       <Slider {...settings} className="h-full">
         {sliderImages.map((image, index) => (
           <div key={index} className="h-full">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full lg:h-[86vh] h-[50vh] object-cover"
+              className="w-full lg:h-[86vh] h-[100vh] object-cover"
             />
           </div>
         ))}
       </Slider>
 
       {/* Overlay for Text & Form */}
-      <div className="bg-black bg-opacity-10 absolute inset-0 flex items-center lg:h-[86vh]">
+      <div className="bg-black bg-opacity-10 absolute inset-0 flex items-center lg:h-[86vh] ">
         {/* Drone-Themed Decorative Elements */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
           <DroneBackgroundSVG className="absolute top-10 left-10 opacity-20" />
