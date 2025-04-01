@@ -72,7 +72,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative bg-gradient-to-br from-[#103c65] to-[#328dcc] h-[100vh]  md:h-[125vh]">
+    <div className="relative bg-gradient-to-br from-[#103c65] to-[#328dcc] h-[100vh]  md:h-[120vh]">
       <Slider {...settings} className="h-full">
         {sliderImages.map((image, index) => (
           <div key={index} className="h-full">
@@ -95,7 +95,7 @@ const Hero = () => {
 
         <div className="max-w-7xl mx-auto px-6 md:px-14 w-full flex flex-col lg:flex-row justify-between relative z-10 md:mt-80 lg:mt-44">
           {/* Left Side - Text and CTA (Position Unchanged) */}
-          <div className="w-full lg:w-1/2 text-white mt-20">
+          <div className="w-full lg:w-1/2 text-white">
             <h1 className="lg:text-6xl md:text-4xl text-2xl mb-4 font-sans font-thin bg-gradient-to-r from-black to-blue-600 bg-clip-text text-transparent animate-fade-in">
               Drone Planet: <br /> Shaping the Future of Flight
             </h1>

@@ -97,7 +97,7 @@ const OurOfferings = () => {
             >
               <div className="flex flex-col items-center space-y-4">
                 <div className="bg-white p-3 rounded-full">{offering.icon}</div>
-                <h3 className="text-xl font-semibold">{offering.title}</h3>
+                <h3 className="text-xl font-semibold text-black">{offering.title}</h3>
                 <p className="text-sm text-gray-900 opacity-90">{offering.description}</p>
               </div>
             </Link>
