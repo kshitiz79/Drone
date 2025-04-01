@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import {  FaBriefcase, FaCertificate, FaTruck, FaHelicopter } from 'react-icons/fa';
 // Custom Drone SVG Icon for Offering Cards
 const DroneIcon = ({ color }) => (
   <svg
@@ -43,25 +43,25 @@ const offerings = [
   {
     title: "Buy Drones & Accessories",
     description: "Find the best drones, parts, and accessories at competitive prices.",
-    icon: <DroneIcon color="#328dcc" />, // Lighter blue
+    icon: <FaHelicopter  color="#328dcc" />, // Blue Drone icon for Buy Drones & Accessories
     link: "/buy-drones",
   },
   {
     title: "Jobs & Career Opportunities",
     description: "Explore exciting drone-related job opportunities across India.",
-    icon: <DroneIcon color="#10b981" />, // Green
+    icon: <FaBriefcase color="#10b981" />, // Green Briefcase icon for Jobs & Career Opportunities
     link: "/drone-jobs",
   },
   {
     title: "Drone Training & Certification",
     description: "Get certified with DGCA-approved drone pilot training programs.",
-    icon: <DroneIcon color="#f59e0b" />, // Yellow
+    icon: <FaCertificate color="#f59e0b" />, // Yellow Certificate icon for Training & Certification
     link: "/drone-training",
   },
   {
     title: "Drone as a Service (DaaS)",
     description: "Hire professional drone pilots for mapping, surveillance, and more.",
-    icon: <DroneIcon color="#ef4444" />, // Red
+    icon: <FaTruck color="#ef4444" />, // Red Truck icon for Drone as a Service (DaaS) (representing delivery of services)
     link: "/drone-services",
   },
 ];
@@ -90,17 +90,17 @@ const OurOfferings = () => {
         {/* Offerings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
           {offerings.map((offering, index) => (
-            <Link
+            <div
               to={offering.link}
               key={index}
               className="text-black border-[#027bff] border-2 p-6 rounded-xl shadow-lg text-white transition-transform transform hover:scale-105 hover:shadow-xl"
             >
               <div className="flex flex-col items-center space-y-4">
                 <div className="bg-white p-3 rounded-full">{offering.icon}</div>
-                <h3 className="text-xl font-semibold">{offering.title}</h3>
+                <h3 className="text-xl font-semibold text-black">{offering.title}</h3>
                 <p className="text-sm text-gray-900 opacity-90">{offering.description}</p>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

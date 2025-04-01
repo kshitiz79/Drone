@@ -72,30 +72,27 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative bg-gradient-to-br from-[#103c65] to-[#328dcc] h-[100vh]  md:h-auto">
+    <div className="relative bg-gradient-to-br from-[#103c65] to-[#328dcc] h-[110vh]  md:h-[120vh]">
       <Slider {...settings} className="h-full">
         {sliderImages.map((image, index) => (
           <div key={index} className="h-full">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full lg:h-[86vh] h-[100vh] object-cover"
+              className="w-full lg:h-[125vh] h-[110vh] md:h-[125vh] object-cover"
             />
           </div>
         ))}
       </Slider>
 
       {/* Overlay for Text & Form */}
-      <div className="bg-black bg-opacity-10 absolute inset-0 flex items-center md:h-[10vh] lg:h-[86vh]">
+      <div className=" absolute inset-0 flex items-center md:h-[10vh] lg:h-[86vh]">
         {/* Drone-Themed Decorative Elements */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-          <DroneBackgroundSVG className="absolute top-10 left-10 opacity-20" />
-          <DroneBackgroundSVG className="absolute bottom-10 right-10 opacity-20" />
-        </div>
+     
 
-        <div className="max-w-7xl mx-auto px-6 md:px-14 w-full flex flex-col lg:flex-row justify-between relative z-10 md:mt-20 lg:mt-0">
+        <div className="max-w-7xl mx-auto px-6 md:px-14 w-full flex flex-col lg:flex-row justify-between relative z-10 md:mt-80 lg:mt-44">
           {/* Left Side - Text and CTA (Position Unchanged) */}
-          <div className="w-full lg:w-1/2 text-white">
+          <div className="w-full lg:w-1/2 text-white ">
             <h1 className="lg:text-6xl md:text-4xl text-2xl mb-4 font-sans font-thin bg-gradient-to-r from-black to-blue-600 bg-clip-text text-transparent animate-fade-in">
               Drone Planet: <br /> Shaping the Future of Flight
             </h1>
@@ -111,11 +108,11 @@ const Hero = () => {
           <div className="w-full lg:w-2/5 mt-8 md:mt-10 lg:mt-0">
 
 
-
+<div className="mt-30 h-30 w-30">
           
       <form
         onSubmit={handleSubmit}
-        className="bg-white  backdrop-blur-md px-6 py-3 rounded-xl shadow-lg   lg:space-y-3 max-w-md mx-auto lg:mx-0 border border-gray-700"
+        className="bg-white backdrop-blur-md px-6 py-10 rounded-xl shadow-lg lg:space-y-3 max-w-50px lg:mx-0 border border-gray-700"
       >
         <div className="bg-white p-4 rounded-lg space-y-3">
           <h3 className="text-lg font-bold text-center uppercase text-[#027bff] animate-fade-in">
@@ -237,7 +234,7 @@ const Hero = () => {
               }}
               className="h-3 w-3 text-[#027bff] border-[#027bff] rounded focus:ring-[#027bff] focus:ring-2 transition-all duration-300"
             />
-            <label className="ml-2 text-[0.6rem] text-gray-800">{option}</label>
+            <label className="ml-2 text-[0.8rem] text-gray-800">{option}</label>
           </div>
         ))}
       </div>
@@ -289,6 +286,7 @@ const Hero = () => {
           )}
         </div>
       </form>
+      </div>
 
 
 

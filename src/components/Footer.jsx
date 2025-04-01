@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-gray-300 py-8">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8">
           {/* Quick Links */}
-          <div className='flex flex-col items-center'> 
-            <h4 className="text-lg font-semibold mb-4 ">Quick Links</h4>
-            <ul className="space-y-2">
+          <div className="flex flex-col items-center mb-8 md:mb-0"> 
+            <h4 className="text-lg font-semibold mb-4 text-center">Quick Links</h4>
+            <ul className="space-y-2 text-center">
               <li>
                 <Link to="/buy-drones" className="hover:text-white transition">
                   Marketplace
@@ -41,9 +41,9 @@ const Footer = () => {
             </ul>
           </div>
           {/* Vendor Portal */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Vendor Portal</h4>
-            <ul className="space-y-2">
+          <div className="mb-8 md:mb-0">
+            <h4 className="text-lg font-semibold mb-4 text-center">Vendor Portal</h4>
+            <ul className="space-y-2 text-center">
               <li>
                 <Link to="/vendor-onboard" className="hover:text-white transition">
                   Join as Vendor
@@ -52,9 +52,9 @@ const Footer = () => {
             </ul>
           </div>
           {/* Legal */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2">
+          <div className="mb-8 md:mb-0">
+            <h4 className="text-lg font-semibold mb-4 text-center">Legal</h4>
+            <ul className="space-y-2 text-center">
               <li>
                 <Link to="/privacy-policy" className="hover:text-white transition">
                   Privacy Policy
@@ -68,9 +68,9 @@ const Footer = () => {
             </ul>
           </div>
           {/* Social Media & Contact */}
-          <div>
+          <div className="text-center">
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-            <div className="flex space-x-4 mb-4">
+            <div className="flex justify-center space-x-4 mb-4">
               <a href="#" className="hover:text-white transition">
                 <FaFacebookF />
               </a>
@@ -85,9 +85,9 @@ const Footer = () => {
               </a>
             </div>
             <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
-            <p>Email: support@droneplanet.com</p>
-            <p>Phone: +91 12345 67890</p>
-            <p>Address: 123 Drone Street, Mumbai, India</p>
+            <p>Email: Support@droneplanet.in</p>
+            <p>Phone: +91 9266 157 763</p>
+            <p>Address: Plot No 251, Udyog Vihar, Phase IV, Gurgaon-122015</p>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-4 text-center">

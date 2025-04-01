@@ -8,24 +8,24 @@ export const BlogResources = () => {
       title: "Latest Drone Technology Trends",
       snippet:
         "Stay updated on the newest advancements in drone technology and how they can benefit your business.",
-      image: "/blog1.jpg",
-      link: "/blog/latest-drone-tech",
+      image: "./blog1.png",
+      link: "/blog1.png",
     },
     {
       id: 2,
       title: "Drone Safety and Regulations",
       snippet:
         "Learn about the latest drone regulations and best practices to ensure safe and compliant operations.",
-      image: "/blog2.jpg",
-      link: "/blog/drone-safety",
+      image: "./blog2.png",
+      link: "/blog2.png",
     },
     {
       id: 3,
       title: "Maximizing ROI with Drone Services",
       snippet:
         "Discover how drone services can help boost your business efficiency and return on investment.",
-      image: "/blog3.jpg",
-      link: "/blog/drone-roi",
+      image: "./blog3.png",
+      link: "/blog3.png",
     },
   ];
 
@@ -51,7 +51,7 @@ export const BlogResources = () => {
         </h2>
 
         {/* Blog Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 ">
           {blogPosts.map((post) => (
             <div
               key={post.id}

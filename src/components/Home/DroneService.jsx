@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaAddressBook } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
+import { Link } from 'react-router-dom';
+import { FaMapMarkerAlt, FaCameraRetro, FaCogs, FaLeaf } from 'react-icons/fa';
 // Custom Drone SVG Icon for Service Cards
 
 // Custom Drone SVG for Background Decoration
@@ -27,24 +27,25 @@ const services = [
   {
     title: 'Surveying & Mapping',
     description: 'High-precision GIS mapping, land surveys, and 3D modeling.',
-    icon: <FaAddressBook color="#328dcc" />, // Lighter blue
+    icon: <FaMapMarkerAlt color="#328dcc" />, // Map marker icon for Surveying & Mapping
   },
   {
     title: 'Aerial Photography & Videography',
     description: 'Stunning drone photography for real estate, events, and media.',
-    icon: <FaAddressBook color="#328dcc" />, // Green
+    icon: <FaCameraRetro color="#00b140" />, // Green Camera icon for Aerial Photography
   },
   {
     title: 'Inspection & Surveillance',
     description: 'Remote monitoring and infrastructure inspections for various industries.',
-    icon: <FaAddressBook color="#328dcc" />,
+    icon: <FaCogs color="#328dcc" />, // Gear icon for Inspection & Surveillance
   },
   {
     title: 'Agriculture & Farm Solutions',
     description: 'Precision spraying, crop health monitoring, and yield optimization.',
-    icon: <FaAddressBook color="#328dcc" />,
+    icon: <FaLeaf color="#328dcc" />, // Leaf icon for Agriculture & Farm Solutions
   },
 ];
+
 
 const DroneService = () => {
   return (
