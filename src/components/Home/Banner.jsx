@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { UserIcon, PhoneIcon, MapPinIcon, GlobeAltIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
-// Custom Drone SVG for Background Decoration
+
 const DroneBackgroundSVG = ({ className }) => (
   <svg
     className={className}
@@ -59,7 +59,7 @@ const Hero = () => {
     setIsLoading(true);
 
     try {
-      // Simulate API call
+  
       await new Promise((resolve) => setTimeout(resolve, 1000));
       console.log("Submitted data:", formData);
       setMessage('Thank you for your submission! We will get back to you soon.');
@@ -85,13 +85,12 @@ const Hero = () => {
         ))}
       </Slider>
 
-      {/* Overlay for Text & Form */}
+
       <div className=" absolute inset-0 flex items-center md:h-[10vh] lg:h-[86vh]">
-        {/* Drone-Themed Decorative Elements */}
-     
+
 
         <div className="max-w-7xl mx-auto px-6 md:px-14 w-full flex flex-col lg:flex-row justify-between relative z-10 md:mt-80 lg:mt-44">
-          {/* Left Side - Text and CTA (Position Unchanged) */}
+   
           <div className="w-full lg:w-1/2 text-white ">
             <h1 className="lg:text-6xl md:text-4xl text-2xl mb-4 font-sans font-thin bg-gradient-to-r from-black to-blue-600 bg-clip-text text-transparent animate-fade-in">
               Drone Planet: <br /> Shaping the Future of Flight
@@ -104,7 +103,7 @@ const Hero = () => {
             </button>
           </div>
  
-          {/* Right Side - Attractive Transparent Contact Form */}
+         
           <div className="w-full lg:w-2/5 mt-8 md:mt-10 lg:mt-0">
 
 
@@ -119,7 +118,7 @@ const Hero = () => {
             Contact Us
           </h3>
 
-          {/* Name */}
+   
           <div className="relative">
             <label className="block text-gray-300 text-xs font-medium mb-1">Name</label>
             <input
@@ -134,7 +133,7 @@ const Hero = () => {
             <UserIcon className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300" />
           </div>
 
-          {/* Phone */}
+     
           <div className="relative">
             <label className="block text-gray-300 text-xs font-medium mb-1">Phone Number</label>
             <input
@@ -149,7 +148,7 @@ const Hero = () => {
             <PhoneIcon className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300" />
           </div>
 
-          {/* City */}
+      
           <div className="relative">
             <label className="block text-gray-300 text-xs font-medium mb-1">City</label>
             <input
@@ -164,7 +163,7 @@ const Hero = () => {
             <MapPinIcon className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300" />
           </div>
 
-          {/* State */}
+     
           <div className="relative">
             <label className="block text-gray-300 text-xs font-medium mb-1">State</label>
             <input
@@ -179,7 +178,7 @@ const Hero = () => {
             <GlobeAltIcon className="absolute left-2 top-7 h-4 w-4 text-gray-500 hover:text-blue-500 transition-all duration-300" />
           </div>
 
-          {/* Email */}
+
           <div className="relative">
             <label className="block text-gray-300 text-xs font-medium mb-1">Email Address</label>
             <input
@@ -207,7 +206,7 @@ const Hero = () => {
             </svg>
           </div>
 
-          {/* Interest */}
+          
           <div>
       <label className="block text-gray-700 text-xs font-medium mb-2">Fields of Interest</label>
       <div className="grid grid-cols-4 gap-2">
@@ -274,7 +273,7 @@ const Hero = () => {
             </button>
           </div>
 
-          {/* Success/Error Message */}
+
           {message && (
             <div
               className={`mt-2 p-2 rounded-lg text-center text-xs transition-all duration-300 ${

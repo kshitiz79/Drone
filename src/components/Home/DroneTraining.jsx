@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Custom Drone SVG Icon for Course Cards
+
 const DroneIcon = ({ color }) => (
   <svg
     width="40"
@@ -20,7 +20,7 @@ const DroneIcon = ({ color }) => (
   </svg>
 );
 
-// Custom Drone SVG for Background Decoration
+
 const DroneBackgroundSVG = ({ className }) => (
   <svg
     className={className}
@@ -65,22 +65,22 @@ const courses = [
 const DroneTraining = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
-      {/* Background Overlay */}
 
 
-      {/* Drone-Themed Decorative Elements */}
+
+     
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <DroneBackgroundSVG className="absolute top-10 left-10 opacity-20" />
         <DroneBackgroundSVG className="absolute bottom-10 right-10 opacity-20" />
       </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Heading with Gradient Text */}
+
         <h2 className="text-4xl md:text-5xl font-bold  mb-4  animate-fade-in">
           Drone Training & <span className='text-[#027bff]'> Certification</span> 
         </h2>
        
-        {/* Courses Grid */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
           {courses.map((course, index) => (
             <div
@@ -94,7 +94,7 @@ const DroneTraining = () => {
           ))}
         </div>
 
-        {/* Call to Action Button */}
+
         
       </div>
     </section>

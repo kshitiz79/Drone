@@ -26,10 +26,7 @@ const NewsletterSubscription = () => {
 
   return (
     <section className="py-16 bg-gradient-to-b from-[#328dcc] to-[#103c65]   relative overflow-hidden">
-      {/* Background Overlay */}
- 
 
-      {/* Decorative Element */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <svg className="absolute top-10 left-10 opacity-20" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -40,7 +37,7 @@ const NewsletterSubscription = () => {
       </div>
 
       <div className="max-w-3xl mx-auto text-center relative z-10">
-        {/* Heading with Gradient Text */}
+
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-200 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
           Subscribe to Our Newsletter
         </h2>
@@ -48,7 +45,7 @@ const NewsletterSubscription = () => {
           Get the latest updates, exclusive offers, and drone industry news delivered straight to your inbox.
         </p>
 
-        {/* Form */}
+
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <div className="relative w-full sm:w-96">
             <input

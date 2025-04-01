@@ -23,10 +23,9 @@ const DroneBackgroundSVG = ({ className }) => (
 const VendorOnboarding = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
-      {/* Background Overlay */}
-\
 
-      {/* Drone-Themed Decorative Elements */}
+
+
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <DroneBackgroundSVG className="absolute top-10 left-10 opacity-20" />
         <DroneBackgroundSVG className="absolute bottom-10 right-10 opacity-20" />
@@ -41,7 +40,7 @@ const VendorOnboarding = () => {
           Expand your business with Drone Planet by reaching targeted customers, enjoying hassle-free selling, and receiving dedicated support.
         </p>
 
-        {/* Vendor Benefits Grid */}
+  
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Reach Targeted Customers</h3>
@@ -63,7 +62,7 @@ const VendorOnboarding = () => {
           </div>
         </div>
 
-        {/* Call to Action Button */}
+
         <Link
           to="/vendor-onboard"
           className="inline-block px-8 py-3 bg-[#027bff] text-white border-white border-2 font-semibold rounded-lg shadow-md hover:from-[#328dcc] hover:to-[#103c65] hover:scale-105 transition-all duration-300"

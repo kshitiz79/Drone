@@ -23,24 +23,22 @@ const DroneBackgroundSVG = ({ className }) => (
 const DroneJobs = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
-      {/* Background Overlay */}
+   
 
-
-      {/* Drone-Themed Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <DroneBackgroundSVG className="absolute top-10 left-10 opacity-20" />
         <DroneBackgroundSVG className="absolute bottom-10 right-10 opacity-20" />
       </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Heading with Gradient Text */}
+
         <h2 className="text-4xl md:text-5xl font-extrabold mb-12 animate-fade-in">
           Drone Jobs & <span className='text-[#027bff]'>  Career Opportunities</span>
         </h2>
 
-        {/* Job Seekers and Employers Sections */}
+   
         <div className="flex flex-col md:flex-row justify-center gap-8 px-4">
-          {/* Job Seekers Section */}
+
           <div className="bg-white rounded-xl shadow-lg p-8 flex-1 transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">For Job Seekers</h3>
             <p className="text-gray-600 mb-6">
@@ -49,7 +47,7 @@ const DroneJobs = () => {
            
           </div>
 
-          {/* Employers Section */}
+     
           <div className="bg-white rounded-xl shadow-lg p-8 flex-1 transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">For Employers</h3>
             <p className="text-gray-600 mb-6">

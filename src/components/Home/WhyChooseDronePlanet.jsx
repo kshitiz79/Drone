@@ -19,7 +19,7 @@ export const WhyChooseDronePlanet = () => {
     "Expert Trainers with Industry Experience",
   ];
 
-  // Animation variants
+ 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -78,7 +78,7 @@ export const WhyChooseDronePlanet = () => {
           Why Choose <span className='text-[#027bff]'> Drone Planet?</span>
         </motion.h2>
 
-        {/* Differentiators Grid */}
+
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -98,12 +98,12 @@ export const WhyChooseDronePlanet = () => {
                 transform: `rotate(${index % 2 === 0 ? '-2deg' : '2deg'})`,
               }}
             >
-              {/* Icon */}
+  
               <div className="relative mb-4">
                 {icons[index]}
               </div>
 
-              {/* Differentiator Text */}
+           
               <p className="text-lg font-medium text-gray-800">{item}</p>
             </motion.div>
           ))}
